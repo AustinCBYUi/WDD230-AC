@@ -1,0 +1,48 @@
+.grids {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px;
+    grid-template-rows: 40px;
+    padding: 15px;
+    justify-items: center;
+    text-align: center;
+}
+
+.one {
+    background-color: #A3D4A7;
+    width: 50px;
+    height: 50px;
+}
+
+.two {
+    background-color: #84AB87;
+    width: 50px;
+    height: 50px;
+}
+
+.three {
+    background-color: #BEF8C3;
+    width: 50px;
+    height: 50px;
+}
+
+.four {
+    background-color: #648267;
+    width: 50px;
+    height: 50px;
+}
+
+.five {
+    background-color: #455946;
+    width: 50px;
+    height: 50px;
+}
+
+.headings {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
