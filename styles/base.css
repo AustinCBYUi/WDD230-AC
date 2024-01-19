@@ -93,6 +93,10 @@ nav a {
 	text-decoration: none;
 }
 
+#menu::before {
+    content: "=";
+}
+
 #menu {
     font-size: 2rem;
     background: none;
@@ -120,7 +124,7 @@ ul.navigation {
     list-style-type: none;
 }
 
-menu.open::before {
+#menu.open::before {
     content: "x";
 }
 
