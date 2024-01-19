@@ -93,17 +93,53 @@ nav a {
 	text-decoration: none;
 }
 
-nav a:hover {
-	text-decoration:overline;
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
 }
 
-.active {
-	color: yellow;
+ul.navigation li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
 }
+
+li.current-menu-item a {
+    background-color: #222b31;
+}
+
+ul.navigation {
+    display: none;
+    list-style-type: none;
+}
+
+menu.open::before {
+    content: "x";
+}
+
+ul.navigation.open {
+    display: block;
+}
+
+ul.navigation li:hover {
+    background-color: #222b31;
+}
+
 
 footer {
     color: white;
     padding: 15px;
     font-size: 20px;
     text-align: center;
+}
+
+#mode {
+    cursor: pointer;
 }

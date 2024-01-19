@@ -33,10 +33,13 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="">Home</a>
-        <a href="">Chamber</a>
-        <a href="week01/chamber-site-plan.html">Site Plan</a>
-        <a href="">Form</a>
+        <button id="menu">&#9776;</button>
+        <ul class="navigation">
+            <li class="current-menu-item"><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
     </nav>
 
     <!-- Main -->
@@ -64,7 +67,10 @@
     <footer>
         <p>&copy;<span id="year">h</span> Austin Campbell USA</p>
         <p id="lastModified"></p>
+        <div id="mode">🕶️</div>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/lightMode.js"></script>
 </body>
 </html>
