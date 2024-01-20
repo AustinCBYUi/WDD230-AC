@@ -232,3 +232,26 @@ ul.navigation li:hover {
 .weather-card h3 {
     color: black;
 }
+/* --------------- END OF WEATHER SECTION -------------- */
+
+
+/* --------------- FOOTER SECTION -------------- */
+footer {
+    color: white;
+    background-color: #222b31;
+}
+
+.footerinfos {
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+#lastModified {
+    text-decoration: none;
+    color: red;
+}
+
+#lastModified:hover {
+    color: rgb(223, 110, 110);
+}
