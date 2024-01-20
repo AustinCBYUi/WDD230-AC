@@ -1,0 +1,149 @@
+/*
+* Author - Austin Campbell for BYUi WDD230
+* Credits - W3C Schools, and random pages for minor styling help like overflow.
+*
+*/
+@media screen and (min-width: 800px) {
+    /* --------------- Navigation Stuff -------------- */
+    nav  ul, ul.navigation, ul.navigation open{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 10rem 10rem 10rem 10rem;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+    /* --------------- END OF NAVIGATION -------------- */
+
+
+    /* --------------- Supposed To be for Parallax -------------- */
+    body, html {
+        height: 100%;
+    }
+
+
+    /* --------------- Parallax num 1 -------------- */
+
+    .parallax {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        height: 100%;
+        width: 100%;
+
+        justify-items: center;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 62px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    /* --------------- END OF PARALLAX NUM 1 -------------- */
+
+
+    /* --------------- Events Section Stuff -------------- */
+    .events {
+        background-color: #222b31;
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        padding: 10px;
+    }
+
+    .events-image img {
+        display: block;
+        padding-top: 0%;
+        padding: 5px;
+        max-width: 100%;
+        grid-column: 1/2;
+    }
+
+    .events-text {
+        color: white;
+        display: inline;
+        grid-column: 2/3;
+        padding-left: 40px;
+        justify-items: center;
+    }
+
+    .events-text h3 {
+        font-size: 24px;
+    }
+    .events-text p {
+        font-size: 17px;
+    }
+
+    #events-button {
+        margin-left: 250px;
+    }
+    /* --------------- END OF EVENTS SECTION -------------- */
+
+
+    /* --------------- Hero Text 2 for second parallax -------------- */
+    .hero-text2 {
+        text-align: center;
+        transform: translate(0%, -220%);
+        color: white;
+        font-size: 62px;
+    }
+
+    #become-member {
+        border: none;
+    }
+    /* --------------- END OF PARALLAX 2/HERO 2 -------------- */
+
+
+    /* --------------- Spotlight box / grids -------------- */
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+        align-content: center;
+    }
+
+    .box img {
+        width: 350px;
+        padding-top: 15px;
+        padding-left: 10%;
+        /* margin-left: 5%; */
+
+    }
+
+    .box {
+        color: white;
+        background-color: #222b31;
+        justify-self: center;
+        border: solid .5px white;
+        height: 450px;
+        width: 450px;
+    }
+
+    .box h3 {
+        text-align: center;
+    }
+
+    .box p {
+        text-align: center;
+        margin-left: 15px;
+        max-width: 400px;
+        font-weight: 200;
+        font-size: 18px;
+    }
+    /* --------------- END OF SPOTLIGHT BOXES -------------- */
+}

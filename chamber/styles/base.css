@@ -1,0 +1,234 @@
+/*
+* Author - Austin Campbell for BYUi WDD230
+* Credits - W3C Schools, and random pages for minor styling help like overflow.
+*
+*/
+
+/* --------------- Body Stuff -------------- */
+body {
+    background-color: #4f4f4f;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+/* --------------- END OF MAIN PAGE -------------- */
+
+
+/* --------------- Navigation Stuff -------------- */
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	/* max-width: 767px; */
+    padding: 15px 15px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+#menu::before {
+    content: "=";
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+ul.navigation li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: #222b31;
+}
+
+ul.navigation {
+    display: none;
+    list-style-type: none;
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+ul.navigation.open {
+    display: block;
+}
+
+ul.navigation li:hover {
+    background-color: #222b31;
+}
+
+/* --------------- END OF NAVIGATION -------------- */
+
+
+/* --------------- Parallax Number 1 + Hero -------------- */
+
+.parallax {
+    background-attachment: scroll;
+    width: auto;
+}
+
+.hero-text {
+    text-align: center;
+    /* top: %; */
+    left: 50%;
+    transform: translate(0%, -200%);
+    color: white;
+    font-size: 18px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/* --------------- END OF PARALLAX NUM 1 -------------- */
+
+
+/* --------------- Events Section -------------- */
+.events {
+    background-color: #222b31;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding: 10px;
+}
+
+.events-image img {
+    display: block;
+    padding-top: 15%;
+    max-width: 100%;
+    grid-column: 1/2;
+}
+
+.events-text {
+    color: white;
+    display: inline;
+    grid-column: 2/3;
+    padding-left: 10px;
+    justify-items: center;
+}
+
+#events-button {
+    margin-left: 35px;
+    color: white;
+    font-weight: 200;
+    background-color: #36454f;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#events-button:hover {
+    background-color: #4f4f4f;
+}
+/* --------------- END OF EVENTS SECTION -------------- */
+
+
+/* --------------- Parallax Number 2 maybe? -------------- */
+
+.hero-text2 {
+    text-align: center;
+    /* top: %; */
+    left: 50%;
+    transform: translate(0%, -200%);
+    color: white;
+    font-size: 18px;
+}
+
+#become-member {
+    border: none;
+    cursor: pointer;
+}
+#become-member:hover {
+    background-color: #4f4f4f;
+    color: white;
+}
+/* --------------- END OF PARALLAX NUM 2 -------------- */
+
+
+/* --------------- Spotlight box / grids -------------- */
+
+.spotlight {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    align-content: center;
+    overflow: auto;
+}
+
+.box img {
+    width: 320px;
+    padding-top: 15px;
+    padding-left: 8%;
+    /* margin-left: 5%; */
+
+}
+
+.box {
+    color: white;
+    background-color: #222b31;
+    justify-self: center;
+    border: solid .5px white;
+    height: 450px;
+    width: 375px;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+    margin-left: 15px;
+    max-width: 400px;
+    font-weight: 200;
+    font-size: 18px;
+}
+/* --------------- END OF PARALLAX NUM 2 -------------- */
+
+
+/* --------------- Weather Section / grids -------------- */
+.weather {
+    background-color: #222b31;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding: 10px;
+}
+
+.weather h3 {
+    color: white;
+    padding-left: 10px;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.weather-card {
+    color: black;
+    background-color: #fff;
+    border: solid .25px black;
+    margin: 5px;
+    height: 300px;
+}
+
+.weather-card h3 {
+    color: black;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glendale Chamber of Commerce</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Glendale Chambers of Commerce by Austin C">
+    <meta name="author" content="Austin Campbell">
+    <meta name="purpose" content="Re-create a chamber website.">
+
+    <!-- Stylesheets and favicon -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Browser normalizer -->
+    <link rel="stylesheet" href="styles/base.css">      <!-- Base styling -->
+    <link rel="stylesheet" href="styles/larger.css">    <!--@Media for larger screens -->
+    <link rel="icon" href="images/chamber-favicon.png">         <!-- Favorites Icon -->
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Glendale Chambers of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visitglendale.com/wp-content/uploads/2019/06/thunderbird-conservation-park-renzodollarbill.jpg">
+    <meta property="og:url" content="https://austincbyui.github.io/wdd230/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header, to be worked on -->
+    <header>
+
+    </header>
+
+    <!-- Navigation Stuff, taken from Home page -->
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li class="current-menu-item"><a href="">Home</a></li>
+            <li><a href="">Page 2</a></li>
+            <li><a href="">Page 3</a></li>
+            <li><a href="">Page 4</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- Hero / Parallax Box 1 -->
+        <div class="parallax">
+            <img class="center" src="images/parallax1Hero.jpg" alt="Glendale Chamber of Commerce Building">
+            <div class="hero-text">
+                <h1>Make a Difference</h1>
+                <p>One Cactus At a Time</p>
+            </div>
+        </div>
+
+
+        <!-- Events Box -->
+        <div class="events">
+            <div class="events-image">
+                <img class="left" src="images/events.jpeg" alt="Picture of empty gathering area">
+            </div>
+            <div class="events-text">
+                <h3>Events in Glendale</h3>
+                <p>The Glendale Chambers of Commerce frequently host events to better our community.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus repellendus esse autem nemo sapiente vero ipsam, veniam pariatur, sint fugiat excepturi atque quam libero, nostrum neque eaque est animi provident!
+                </p>
+                <button id="events-button">See Events</button>
+            </div>
+        </div>
+
+
+        <!-- Parllax 2, will keep this but need new image -->
+        <div class="parallax">
+            <img class="center" src="images/parallax1Hero.jpg" alt="Glendale Chamber of Commerce Building">
+            <div class="hero-text2">
+                <h1>Become a Member</h1>
+                <button id="become-member">Join Now</button>
+            </div>
+        </div>
+
+
+        <!-- SpotLight Advertisements -->
+        <div class="spotlight">
+            <div class="box">
+                <img src="images/placeholder.jpg" alt="placeholder">
+                <h3>Spotlight</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus commodi exercitationem quas temporibus soluta. Repellat aliquam animi omnis odio illum quae quasi temporibus libero dicta ea, officiis et. Error, id?
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/placeholder.jpg" alt="placeholder">
+                <h3>Spotlight</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis praesentium veniam nisi maxime doloribus repellat rem alias exercitationem quam, perspiciatis nihil culpa temporibus blanditiis ea aspernatur consectetur expedita harum quod!
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/placeholder.jpg" alt="placeholder">
+                <h3>Spotlight</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quas sint nam repellat, necessitatibus, corporis aliquam corrupti, accusamus ipsum id eligendi fugit et dignissimos a praesentium ea commodi nisi minus!
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Weather Box, will need to use today, tomorrow, and day after tomorrow
+            on top of finding an API to fetch the data? -->
+        <div class="weather">
+                <h3>Weather in Glendale</h3>
+                <div class="weather-card">
+                    <h3 id="today">mon</h3>
+                    <!-- Icon? -->
+
+                </div>
+                <div class="weather-card">
+                    <h3 id="tomorrow">tue</h3>
+                    <!-- Icon? -->
+                    
+                </div>
+                <div class="weather-card">
+                    <h3 id="dayAfterTomorrow">wed</h3>
+                    <!-- Icon? -->
+                    
+                </div>
+        </div>
+
+    <!--End of Main Tag-->
+    </main>
+
+    <!-- To be worked on -->
+    <footer>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/hamburger-navigation.js"></script>
+    <script src="scripts/buttons.js"></script>
+</body>
+</html>
