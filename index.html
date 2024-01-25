@@ -44,24 +44,40 @@
 
     <!-- Main -->
     <main>
-        <h1 class="notme">WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="">Layout</a> | <a href="">Media Query</a> | <a href="https://codepen.io/AussieDude/pen/zYbKwvb">JS Pen</a></li>
-                <li>Week 02: <a href="">Layout</a> | <a href="">Med</a> | <a href="https://codepen.io/AussieDude/pen/jOJBJKp">JS Pen</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom-copy.html">BOM Activity</a> </li>
-                <li><a href="">Week 04</a></li>
-                <li><a href="">Week 05</a></li>
-                <li><a href="">Week 06</a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <p>Weather</p>
-            <p>Number of Visits to Page: </p>
-        </section>
+        <!-- Responsive Image -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Phoenix Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Phoenix Arizona Temple</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="notme">WDD 230: Web Frontend Development</h1>
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01: <a href="">Layout</a> | <a href="">Media Query</a> | <a href="https://codepen.io/AussieDude/pen/zYbKwvb">JS Pen</a></li>
+                    <li>Week 02: <a href="">Layout</a> | <a href="">Med</a> | <a href="https://codepen.io/AussieDude/pen/jOJBJKp">JS Pen</a></li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom-copy.html">BOM Activity</a> </li>
+                    <li><a href="">Week 04</a></li>
+                    <li><a href="">Week 05</a></li>
+                    <li><a href="">Week 06</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Weather</p>
+                <p>Number of Visits to Page: <span id="visits">0</span></p>
+            </section>
+        </div>
     </main>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13287.671775092442!2d-112.21603707814135!3d33.63336955053553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706146961473!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <!-- Footer -->
     <footer>
@@ -72,5 +88,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/lightMode.js"></script>
+    <script src="scripts/numOfVisits.js"></script>
 </body>
 </html>

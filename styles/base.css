@@ -1,15 +1,17 @@
 * {
-    margin: 0;
+    margin: auto;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 header {
-    background-color: #bbb;
+    background-color: #201b1b;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+    max-width: 767px;
+    margin: 0 auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -24,11 +26,47 @@ header span {
     font-weight: 250;
 }
 
-header, main {
-    background-color: #456ea2;
+main {
+
     max-width: 767px;
 	margin: 0 auto;
 }
+
+/* Hero Stuff Week 03*/
+
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: linear-gradient(#2c2c2c, #000000);
+	/* border: 1px solid rgba(7, 6, 6, 0.75); */
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #201b1b;
+	opacity: 0.75;
+}
+
+.herolabel p {
+    color: white;
+	margin: 0;
+	padding: .25rem;
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+/* End of Hero Stuff */
 
 main h1 {
     text-align: center;
@@ -39,28 +77,43 @@ main h1 {
     text-decoration-thickness: 1px;
 }
 
+.content {
+    display: block;
+    background-color: #201b1b;
+    margin: 10px auto;
+    padding: 15px;
+}
+
 .card, .card ul {
     display: block;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #222b31;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    background-color: #2b8ccc;
     color: white;
+    font-weight: 600;
+    font-size: 16px;
     list-style: none;
 }
 
 .card h2 {
-    background-color: #36454f;
-    color: white
+    background-color: #363636;
+    color: white;
+    padding: 4px;
 }
 
-.card li, a {
+.card li{
     text-align: left;
-    text-decoration: none;
-    color: whitesmoke;
+    
+}
+
+.card li a {
+    color: white;
+    text-align: right;
+
 }
 
 .card a:hover {
-    color: rgb(72, 139, 81);
+    color: #00ff15;
 }
 
 /*
@@ -72,13 +125,13 @@ main h1 {
 
 
 body {
-    background-color: #4f4f4f;
+    background-color: #858585;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
 
 nav {
-	background-color: #36454f;
+	background-color: #363636;
 	margin: 0 auto;
 	max-width: 767px;
 }
@@ -115,10 +168,6 @@ ul.navigation li a {
     text-decoration: none;
 }
 
-li.current-menu-item a {
-    background-color: #222b31;
-}
-
 ul.navigation {
     display: none;
     list-style-type: none;
@@ -132,16 +181,24 @@ ul.navigation.open {
     display: block;
 }
 
-ul.navigation li:hover {
-    background-color: #222b31;
+/* Merged to one line for two elements*/
+ul.navigation li:hover, .navigation .current-menu-item {
+    background-color: #456ea2;
+}
+
+.map {
+    margin: 10px auto;
+    display: block;
 }
 
 
 footer {
     color: white;
+    background-color: #201b1b;
     padding: 15px;
     font-size: 20px;
     text-align: center;
+    max-width: 767px;
 }
 
 #mode {
