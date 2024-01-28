@@ -258,11 +258,11 @@ footer {
 
 #lastModified {
     text-decoration: none;
-    color: red;
+    color: #7e9ec9;
 }
 
 #lastModified:hover {
-    color: rgb(223, 110, 110);
+    color: #7e9ec9;
 }
 
 /* --------------- ------------------ -------------- */
