@@ -1,7 +1,12 @@
 /*
 * Author - Austin Campbell for BYUi WDD230
 * Credits - W3C Schools, and random pages for minor styling help like overflow.
-*
+* Primary -     #032149c9 (Navy Dark Blue)
+* Secondary -   #1a1d1f (Charcoal Black)
+* Accent1 -     #456ea2 (Light blue)
+* Accent2 -     #222b31 (Dark Gray)
+* Accent3 -     #58705a (Greenish)
+#222b31
 */
 
 /* --------------- Body Stuff -------------- */
@@ -14,8 +19,11 @@ body {
 
 
 /* --------------- Navigation Stuff -------------- */
+header {
+    background-color: #222b31;
+}
 nav {
-	background-color: #36454f;
+	background-color: #222b31;
 	margin: 0 auto;
 	/* max-width: 767px; */
     padding: 15px 15px;
@@ -28,6 +36,7 @@ nav ul {
 nav a {
 	display: block;
 	color: #fff;
+    font-weight: 800;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
@@ -56,7 +65,7 @@ ul.navigation li a {
 }
 
 li.current-menu-item a {
-    background-color: #222b31;
+    background-color: #456ea2;
 }
 
 ul.navigation {
@@ -73,7 +82,7 @@ ul.navigation.open {
 }
 
 ul.navigation li:hover {
-    background-color: #222b31;
+    background-color: #456ea2;
 }
 
 /* --------------- END OF NAVIGATION -------------- */
@@ -254,4 +263,18 @@ footer {
 
 #lastModified:hover {
     color: rgb(223, 110, 110);
+}
+
+/* --------------- ------------------ -------------- */
+/* ------------- START OF DISCOVER PAGE ------------ */
+/* --------------- ------------------ -------------- */
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.box1 {
+    color: white;
+    max-width: 767px;
 }

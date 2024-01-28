@@ -146,4 +146,40 @@
         font-size: 18px;
     }
     /* --------------- END OF SPOTLIGHT BOXES -------------- */
+
+
+    /* --------------- ------------------ -------------- */
+/* ------------- START OF DISCOVER PAGE ------------ */
+/* --------------- ------------------ -------------- */
+
+    .columns {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .left {
+        grid-column: 1/2;
+    }
+
+    .right {
+        grid-column: 2/3;
+    }
+
+    .box1 {
+        background-color: #1a1d1f;
+        max-width: 600px;
+        display: block;
+        text-align: center;
+    }
+
+    .box-image img {
+        border: 5px solid #1a1d1f;
+        max-width: 600px;
+        max-height: 500px;
+    }
 }
