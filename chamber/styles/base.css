@@ -274,7 +274,41 @@ footer {
     grid-template-columns: 1fr;
 }
 
+.heading {
+    color: white;
+}
+
+
+.box1 {
+    background-color: #1a1d1f;
+    width: 350px;
+}
+
+
+.centerbox {
+    color: white;
+}
+
+
 .box1 {
     color: white;
-    max-width: 767px;
+}
+
+.label {
+    position: relative;
+    top: -13px;
+	background: linear-gradient(#2c2c2c, #000000);
+	/* border: 1px solid rgba(7, 6, 6, 0.75); */
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #201b1b;
+	opacity: 0.75;
+    margin-top: -80px;
+}
+
+.label p {
+    color: white;
+	margin: 0;
+	padding: .25rem;
+	font-weight: 300;
+	font-size: 1.5rem;
 }

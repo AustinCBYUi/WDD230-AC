@@ -154,32 +154,97 @@
 
     .columns {
         display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 0 auto;
+        grid-template-columns: 300px 800px 300px;
+        justify-content: center;
         justify-items: center;
-        align-items: center;
-        padding: 15px;
+        /* padding: 15px; */
+        /* margin: 0 auto; */
+    }
+
+    .columns h2 {
+        color:#7fe07c;
+    }
+
+    .heading {
+        color: white;
+        text-align: center;
+        margin-top: 50px;
     }
 
     .left {
         grid-column: 1/2;
     }
 
-    .right {
-        grid-column: 2/3;
-    }
-
     .box1 {
         background-color: #1a1d1f;
-        max-width: 600px;
-        display: block;
+        max-width: 250px;
+        height: 250px;
         text-align: center;
+        padding: 10px;
+        margin-bottom: 7px;
+        font-weight: 600;
     }
 
-    .box-image img {
+    .box1 a, .box1 .color {
+        text-decoration: none;
+        color: #79a3da;
+    }
+
+    .box1 a:hover {
+        color:aliceblue;
+    }
+
+    .box1 h2, .box1 p {
+        margin-top: 38px;
+    }
+
+    .centerbox h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    .center {
+        grid-column: 2/3;
+        grid-row-start: 1;
+        /* max-width: fit-content; */
         border: 5px solid #1a1d1f;
-        max-width: 600px;
-        max-height: 500px;
+    }
+
+    .centerbox {
+        color: white;
+        font-size: 18px;
+        padding: 12px;
+        width: 800px;
+    }
+
+    .right {
+        grid-column: 3/4;
+    }
+
+    .imagesidebar {
+        margin-left: 60px;
+        /* border: 5px solid #1a1d1f; */
+    }
+
+    .imagesidebar:hover, .box-image img:hover {
+        box-shadow: 0 0 50px #8f8f8f;
+    }
+
+    .imagesidebar .lazy, .box-image .lazy {
+        animation: fade 5s;
+        background: #2e2e2e;
+    }
+
+    .imagesidebar img {
+        border: 5px solid #1a1d1f;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }
