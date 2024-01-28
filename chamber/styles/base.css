@@ -296,7 +296,7 @@ footer {
 
 .label {
     position: relative;
-    top: -13px;
+    top: -12px;
 	background: linear-gradient(#2c2c2c, #000000);
 	/* border: 1px solid rgba(7, 6, 6, 0.75); */
 	padding: 1.5rem;
