@@ -41,6 +41,8 @@
     border: var(--bord);
     border-radius: var(--bordrad);
     background-color: #272727;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .formy label {
