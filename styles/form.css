@@ -80,3 +80,19 @@
     border: var(--bordsmall);
     border-radius: var(--bordrad);
 }
+
+@media screen and (max-width: 800px) {
+    .formy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+    }
+
+    .formy label {
+        margin-bottom: 10px;
+        }
+
+    .formy .value {
+        max-height: 35px;
+    }
+}
