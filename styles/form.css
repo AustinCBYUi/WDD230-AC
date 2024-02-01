@@ -1,0 +1,58 @@
+
+:root {
+    --bord: 1px solid #000000;
+}
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 20px;
+	width: 170px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+.recorded {
+    background-color: rgb(86, 146, 86);
+    text-decoration: none;
+}
+
+.formy {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    border: var(--bord);
+    border-radius: 5px;
+}
+
+.formy label {
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.slider {
+    grid-column: 2/3;
+}
+
+.button {
+    grid-column: 1/3;
+    width: 25%;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(29, 29, 29);
+}

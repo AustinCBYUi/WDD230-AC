@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Austin Campbell - WDD 230 - Web Frontend Development</title>
+        <meta name="description" content="WDD 230 - Austin Campbell - Front end forms page">
+        <meta name="author" content="Austin Campbell">
+        <meta name="outline" content="forms page">
+    
+        <!-- Stylesheets and favicon -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/favicon.ico">
+    
+        <!-- OG Meta -->
+        <meta property="og:title" content="Austin Campbell - WDD 230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://visitglendale.com/wp-content/uploads/2019/06/thunderbird-conservation-park-renzodollarbill.jpg">
+        <meta property="og:url" content="https://austincbyui.github.io/wdd230/">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/headshotofme.jpg" alt="picture of me">
+        <span>Austin Campbell</span>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="current-menu-item"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="msg">
+            <p id="msgp"></p>
+        </div>
+
+        <form class="formy" action="record.html">
+            <div class="1">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="user" required>
+            </div>
+
+            <div class="2">
+                <label for="password1">Password: </label>
+                <input type="password" id="password1" name="pass" required pattern="[A-Za-z]{8}">
+            </div>
+
+            <div class="3">
+                <label for="password2">Password Confirmation: </label>
+                <input type="password" id="password2" name="passcheck" required pattern="[A-Za-z].{8,}">
+            </div>
+
+            <div class="4">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
+            </div>
+
+            <div class="5">
+                <label for="r">Page Rating: </label>
+                <div id="rangevalue">0</div>
+                <input class="slider" type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist class="slider" id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </div>
+
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy;<span id="year">h</span> Austin Campbell USA</p>
+            <p id="lastModified"></p>
+            <div id="mode">🕶️</div>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/lightMode.js"></script>
+        <script src="scripts/numOfVisits.js"></script>
+        <script src="scripts/forms.js"></script>
+</body>
+</html>
