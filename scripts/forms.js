@@ -19,7 +19,7 @@ p2.addEventListener("focusout", checkSame);
 // This should be refactored.
 function checkSame() {
 	if (p1.value !== p2.value) {
-		message.textContent = "Passwords DO NOT MATCH!";
+		message.innerHTML = "Passwords DO NOT MATCH!";
 		message.style.visibility = "show";
         message.style.cssText += "background-color:rgb(126, 6, 6);height:50px;color:white;text-align:center;font-weight:600;";
 		p2.style.backgroundColor = "#fff0f3";

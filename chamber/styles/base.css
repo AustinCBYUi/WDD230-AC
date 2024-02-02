@@ -9,6 +9,10 @@
 #222b31
 */
 
+:root {
+    --wh: white;
+}
+
 /* --------------- Body Stuff -------------- */
 body {
     background-color: #4f4f4f;
@@ -35,7 +39,7 @@ nav ul {
 
 nav a {
 	display: block;
-	color: #fff;
+	color: var(--wh);
     font-weight: 800;
 	text-align: center;
 	padding: 1rem;
@@ -50,7 +54,7 @@ nav a {
     font-size: 2rem;
     background: none;
     border: none;
-    color: #fff;
+    color: var(--wh);
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -60,7 +64,7 @@ nav a {
 ul.navigation li a {
     display: block;
     padding: .75rem 2vw;
-    color: #fff;
+    color: var(--wh);
     text-decoration: none;
 }
 
@@ -100,7 +104,7 @@ ul.navigation li:hover {
     /* top: %; */
     left: 50%;
     transform: translate(0%, -200%);
-    color: white;
+    color: var(--wh);
     font-size: 18px;
 }
 
@@ -129,7 +133,7 @@ ul.navigation li:hover {
 }
 
 .events-text {
-    color: white;
+    color: var(--wh);
     display: inline;
     grid-column: 2/3;
     padding-left: 10px;
@@ -138,7 +142,7 @@ ul.navigation li:hover {
 
 #events-button {
     margin-left: 35px;
-    color: white;
+    color: var(--wh);
     font-weight: 200;
     background-color: #36454f;
     border: none;
@@ -159,7 +163,7 @@ ul.navigation li:hover {
     /* top: %; */
     left: 50%;
     transform: translate(0%, -200%);
-    color: white;
+    color: var(--wh);
     font-size: 18px;
 }
 
@@ -169,7 +173,7 @@ ul.navigation li:hover {
 }
 #become-member:hover {
     background-color: #4f4f4f;
-    color: white;
+    color: var(--wh);
 }
 /* --------------- END OF PARALLAX NUM 2 -------------- */
 
@@ -192,10 +196,10 @@ ul.navigation li:hover {
 }
 
 .box {
-    color: white;
+    color: var(--wh);
     background-color: #222b31;
     justify-self: center;
-    border: solid .5px white;
+    border: solid .5px var(--wh);
     height: 450px;
     width: 375px;
 }
@@ -232,7 +236,7 @@ ul.navigation li:hover {
 
 .weather-card {
     color: black;
-    background-color: #fff;
+    background-color: var(--wh);
     border: solid .25px black;
     margin: 5px;
     height: 300px;
@@ -246,7 +250,7 @@ ul.navigation li:hover {
 
 /* --------------- FOOTER SECTION -------------- */
 footer {
-    color: white;
+    color: var(--wh);
     background-color: #222b31;
 }
 
@@ -275,7 +279,7 @@ footer {
 }
 
 .heading {
-    color: white;
+    color: var(--wh);
 }
 
 
@@ -286,12 +290,12 @@ footer {
 
 
 .centerbox {
-    color: white;
+    color: var(--wh);
 }
 
 
 .box1 {
-    color: white;
+    color: var(--wh);
 }
 
 .label {
@@ -306,9 +310,56 @@ footer {
 }
 
 .label p {
-    color: white;
+    color: var(--wh);
 	margin: 0;
 	padding: .25rem;
 	font-weight: 300;
 	font-size: 1.5rem;
+}
+
+
+/* --------------- ------------------ -------------- */
+/* ------------- START  OF  FORM   PAGE ------------ */
+/* --------------- ------------------ -------------- */
+/* -- Credit to W3Schools for the styling tips on this, taught me the correct way to style forms.. --*/
+
+
+
+.formsa form label {
+    text-align: center;
+}
+
+input[type=text], input[type=email], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #456ea2;
+    color: var(--wh);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #2f588f;
+}
+  
+.formsa {
+    background-color: #dafeff;
+    padding: 20px;
+    max-width: 767px;
+    margin-top: 8px;
+}
+
+.join {
+    text-align: center;
+    color: var(--wh);
 }

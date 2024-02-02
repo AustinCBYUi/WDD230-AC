@@ -247,4 +247,13 @@
             opacity: 1;
         }
     }
+
+
+    .formsa {
+        background-color: #f2f2f2;
+        padding: 20px;
+        max-width: 60%;
+        margin-left: 20%;
+        margin-top: 8px;
+    }
 }

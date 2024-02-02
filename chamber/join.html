@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glendale Chamber of Commerce</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Glendale Chambers of Commerce by Austin C">
+    <meta name="author" content="Austin Campbell">
+    <meta name="purpose" content="Re-create a chamber website.">
+
+    <!-- Stylesheets and favicon -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Browser normalizer -->
+    <link rel="stylesheet" href="styles/base.css">      <!-- Base styling -->
+    <link rel="stylesheet" href="styles/larger.css">    <!--@Media for larger screens -->
+    <link rel="icon" href="images/chamber-favicon.png">         <!-- Favorites Icon -->
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Glendale Chambers of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://visitglendale.com/wp-content/uploads/2019/06/thunderbird-conservation-park-renzodollarbill.jpg">
+    <meta property="og:url" content="https://austincbyui.github.io/wdd230/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header, to be worked on -->
+    <header>
+
+    </header>
+
+    <!-- Navigation Stuff, taken from Home page -->
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li class="current-menu-item"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Section -->
+    <main>
+        <div class="join">
+            <h1>Join Us Today</h1>
+        </div>
+        <div class="formsa">
+            <form action="/thank-you.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="position">Position</label>
+                <input type="text" id="position" name="posatcompany" placeholder="Title or Position" pattern="[A-Za-z- ]{8,}">
+          
+                <label for="email">Email</label>
+                <input type="email" id="email" name="emailadd" placeholder="first.last@gmail.com" required>
+            
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phonenum" placeholder="(123) 456-7890" required>
+
+                <label for="org-name">Organization Name</label>
+                <input type="text" id="org" name="org-name" placeholder="Organization Name" required>
+
+                <label for="org-desc">Organization Description</label>
+                <input type="text" id="orgdesc" name="org-desc" placeholder="Organization Description" required>
+
+                <label for="mem-type">Membership Type</label>
+                <select id="mem-type" name="membership">
+                    <option value="default">--</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+
+                <input type="time" id="timestamp" name="timestamp" hidden>
+                <!-- mobile phone number, telephone type, required, name, and id
+                    business/organization's name, text type, required, name, and id.
+                    membership level NP Membership is for non profit organizations and there is no fee.
+                        Bronze Membership
+                        Silver Membership
+                        Gold Membership
+                    business/organization's description, text area, name, and id
+                    timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.
+
+                
+                -->
+
+              <!-- <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select> -->
+            
+                <input type="submit" value="Submit">
+            </form>
+          </div>
+    <!--End of Main Tag-->
+    </main>
+
+    <!-- To be worked on -->
+    <footer>
+        <div class="footerinfos">
+            <p class="main-footer-info">&copy;<span id="year">h</span> Austin Campbell</p>
+            <p>For use only with WDD230 class</p>
+            <p>Last Modified: <a href="https://github.com/AustinCBYUi/wdd230" target="_blank" id="lastModified">t</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/hamburger-navigation.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/lastModified.js"></script>
+</body>
+</html>
