@@ -256,4 +256,10 @@
         margin-left: 20%;
         margin-top: 8px;
     }
+
+    .accordion {
+        padding: 20px;
+        width: 62%;
+        margin-left: 20%;
+    }
 }
