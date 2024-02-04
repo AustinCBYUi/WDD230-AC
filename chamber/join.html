@@ -51,8 +51,9 @@
         <div class="join">
             <h1>Join Us Today</h1>
         </div>
+
         <div class="formsa">
-            <form action="/thank-you.html">
+            <form action="/chamber/thank-you.html">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
             
@@ -68,10 +69,10 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phonenum" placeholder="(123) 456-7890" required>
 
-                <label for="org-name">Organization Name</label>
+                <label for="org">Organization Name</label>
                 <input type="text" id="org" name="org-name" placeholder="Organization Name" required>
 
-                <label for="org-desc">Organization Description</label>
+                <label for="orgdesc">Organization Description</label>
                 <input type="text" id="orgdesc" name="org-desc" placeholder="Organization Description" required>
 
                 <label for="mem-type">Membership Type</label>
@@ -83,7 +84,7 @@
                     <option value="gold">Gold</option>
                 </select>
 
-                <input type="time" id="timestamp" name="timestamp" hidden>
+                <input type="time" id="timestamp" name="timestamp" step="1" hidden>
             
                 <input type="submit" value="Submit">
             </form>

@@ -259,7 +259,11 @@
 
     .accordion {
         padding: 20px;
-        width: 62%;
+        max-width: 62%;
         margin-left: 20%;
+    }
+
+    .main-portion {
+        height: 150px;
     }
 }

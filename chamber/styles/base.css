@@ -376,7 +376,8 @@ input[type=submit]:hover {
     text-align: center;
     cursor: pointer;
     padding: 18px;
-    width: 767px;
+    width: 100%;
+    max-width: 100%;
     /* text-align: left; */
     border: none;
     outline: none;
@@ -384,14 +385,29 @@ input[type=submit]:hover {
     margin-top: 8px;
 }
 
-  .active, .accordion:hover {
+.active, .accordion:hover {
     background-color: #2f588f;
     color: white;
-  }
+}
   
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
-  }
+}
+
+.main-portion {
+    background-color: #d2d2d2;
+    text-align: center;
+    height: 250px;
+    width: 60%;
+    /* display:inline-flexbox; */
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main-portion p {
+    font-size: 20px;
+    font-weight: 600;
+}
