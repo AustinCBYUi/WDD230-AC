@@ -385,6 +385,10 @@ input[type=submit]:hover {
     margin-top: 8px;
 }
 
+.accordion h3 {
+    font-weight: 1200;
+}
+
 .active, .accordion:hover {
     background-color: #2f588f;
     color: white;
