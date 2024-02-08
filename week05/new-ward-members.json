@@ -1,0 +1,23 @@
+{
+    "familyName": "Campbell",
+    "dateMovedIn": "04/01/2022",
+    "numOfPeople": "3",
+    "visitedByBishop": "yes",
+    "familyMembers": [
+        {
+            "name": "Austin",
+            "gender": "Male",
+            "birthday": "01/13/1999"
+        },
+        {
+            "name": "Jessi",
+            "gender": "Female",
+            "birthday": "01/22/1999"
+        },
+        {
+            "name": "Quinn Christensen",
+            "gender": "Male",
+            "birthday": "01/01"
+        }
+    ]
+}
