@@ -12,6 +12,36 @@
                     "title": "mQueries"
                 }
             ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week02/dom.html",
+                    "title": "DOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom-copy.html",
+                    "title": "BOM Activity"
+                }
+            ]
         }
     ]
 }

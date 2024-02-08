@@ -17,6 +17,11 @@ async function getLinks() {
     }
 }
 
+
+// Commenting logic behind this.
+
+//Week counter starting at -1, but really this
+//counts each index in a object? 
 var weekCount = -1;
 const displayLinks = (weeks) => {
     weeks.forEach((week) => {
