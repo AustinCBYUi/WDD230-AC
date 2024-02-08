@@ -26,19 +26,27 @@ var weekCount = -1;
 const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         weekCount++;
-        let list = document.createElement("li");
-        let anchor = document.createElement("a");
+
+        let list = document.querySelector("li");
 
         list.textContent = `${weeks[weekCount].week}: `;
 
-        anchor.setAttribute("href", week.links[weekCount].url);
-        anchor.setAttribute("target", "_blank");
-        anchor.setAttribute("cursor", "pointer");
-        anchor.innerText = `${week.links[weekCount].title}`;
+        var listCount = -1;
+        week.links.forEach((link) => {
+            // console.log(link);
+            listCount++;
+            let anchor = document.createElement("a");
 
-        list.appendChild(anchor);
+            anchor.setAttribute("href", week.links[listCount].url);
+            anchor.setAttribute("target", "_blank");
+            anchor.setAttribute("cursor", "pointer");
 
-        weekList.appendChild(list);
+            anchor.innerText = ` | ${week.links[listCount].title}`;
+
+            list.appendChild(anchor);
+
+            weekList.appendChild(list);
+        });
     });
 }
 

@@ -42,6 +42,44 @@
                     "title": "BOM Activity"
                 }
             ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "url": "https://codepen.io/AussieDude/pen/mdoXKJJ",
+                    "title": "Pseudo CP"
+                },
+                {
+                    "url": "week04/images/sc2.png",
+                    "title": "W3S Image"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Tables"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "url": "https://codepen.io/AussieDude/pen/bGZjPWw",
+                    "title": "PseudoCP 2"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON Writing"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch Activity"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather Activity"
+                }
+            ]
         }
     ]
 }
