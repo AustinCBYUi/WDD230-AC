@@ -39,7 +39,7 @@
                 },
                 {
                     "url": "week03/bom-copy.html",
-                    "title": "BOM Activity"
+                    "title": "BOM"
                 }
             ]
         },
@@ -69,15 +69,15 @@
                 },
                 {
                     "url": "week05/new-ward-members.json",
-                    "title": "JSON Writing"
+                    "title": "Create JSON"
                 },
                 {
                     "url": "week05/prophets.html",
-                    "title": "Fetch Activity"
+                    "title": "Fetch Act."
                 },
                 {
                     "url": "week05/weather.html",
-                    "title": "Weather Activity"
+                    "title": "Weather Act."
                 }
             ]
         }
