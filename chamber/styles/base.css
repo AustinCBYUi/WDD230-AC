@@ -505,3 +505,7 @@ input[type=submit]:hover {
 .list img {
     display: none;
 }
+
+.list section:nth-child(even) {
+	background-color: #3c4044;
+}
