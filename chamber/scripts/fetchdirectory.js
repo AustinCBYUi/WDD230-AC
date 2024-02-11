@@ -28,11 +28,11 @@ const displayData = (infos) => {
         let p = document.createElement("p");
         let address = document.createElement("p");
         let aweb = document.createElement("a");
-        // let logo = document.createElement("img");
+        let logo = document.createElement("img");
         let mem = document.createElement("p");
 
         let website = infos[counter].web;
-        // let logoURL = infos[counter].image;
+        let logoURL = infos[counter].image;
 
         h3.innerHTML = infos[counter].name;
         p.textContent = "Phone: " + infos[counter].phone;
@@ -42,13 +42,13 @@ const displayData = (infos) => {
         mem.textContent = "Membership: " + infos[counter].mem;
 
         aweb.setAttribute("href", website);
-        // logo.setAttribute("src", logoURL);
-        // logo.setAttribute("alt", `${infos[counter].name} logo`);
+        logo.setAttribute("src", logoURL);
+        logo.setAttribute("alt", `${infos[counter].name} logo`);
 
         div.className = "box";
 
         div.appendChild(h3);
-        // div.appendChild(logo);
+        div.appendChild(logo);
         div.appendChild(p);
         div.appendChild(address);
         div.appendChild(aweb);
