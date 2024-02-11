@@ -386,7 +386,7 @@ input[type=submit]:hover {
 }
 
 .accordion h3 {
-    font-weight: 1200;
+    font-weight: 1000;
 }
 
 .active, .accordion:hover {
