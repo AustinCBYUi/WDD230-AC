@@ -415,3 +415,9 @@ input[type=submit]:hover {
     font-size: 20px;
     font-weight: 600;
 }
+
+
+#populate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
