@@ -1,8 +1,7 @@
 {
     "info": [
         {
-            "member": "Straight 6 Performance",
-            "data": [
+            "members": [
                 {
                     "name": "Straight 6 Performance",
                     "address": "19004 N 51st Dr",
@@ -11,12 +10,7 @@
                     "image": "",
                     "mem": "gold",
                     "category": "automotive"
-                }
-            ]
-        },
-        {
-            "member": "Campbell Freelance",
-            "data": [
+                },
                 {
                     "name": "Campbell Freelance",
                     "address": "16601 N 75th Ave",
@@ -25,12 +19,7 @@
                     "image": "",
                     "mem": "silver",
                     "category": "it"
-                }
-            ]
-        },
-        {
-            "member": "SRT Autoworks",
-            "data": [
+                },
                 {
                     "name": "SRT Autoworks",
                     "address": "8380 W Rose Garden Ln St. 18",
@@ -39,12 +28,7 @@
                     "image": "",
                     "mem": "gold",
                     "category": "automotive"
-                }
-            ]
-        },
-        {
-            "member": "Orkin Pest Control",
-            "data": [
+                },
                 {
                     "name": "Orkin Pest Control",
                     "address": "8957 W Windsor Dr St. 119",
@@ -53,12 +37,7 @@
                     "image": "",
                     "mem": "bronze",
                     "category": "exterminating"
-                }
-            ]
-        },
-        {
-            "member": "Bass Pro Shops",
-            "data": [
+                },
                 {
                     "name": "Bass Pro Shops",
                     "address": "1339 W Olive Ave",
@@ -67,12 +46,7 @@
                     "image": "",
                     "mem": "np",
                     "category": "retail"
-                }
-            ]
-        },
-        {
-            "member": "Ray's Tacos",
-            "data": [
+                },
                 {
                     "name": "Ray's Tacos",
                     "address": "918 E Bell Rd",
@@ -81,12 +55,7 @@
                     "image": "",
                     "mem": "gold",
                     "category": "food"
-                }
-            ]
-        },
-        {
-            "member": "Discount Tire AZ",
-            "data": [
+                },
                 {
                     "name": "Discount Tire AZ",
                     "address": "16332 E Happy Valley Dr",
