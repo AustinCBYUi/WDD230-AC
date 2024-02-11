@@ -1,67 +1,71 @@
 {
     "info": [
         {
-            "name": "Straight 6 Performance",
-            "address": "19004 N 51st Dr",
-            "phone": "(623)331-6125",
-            "web": "www.s6p.com",
-            "image": "",
-            "mem": "gold",
-            "category": "automotive"
-        },
-        {
-            "name": "Campbell Freelance",
-            "address": "16601 N 75th Ave",
-            "phone": "(602)851-1613",
-            "web": "www.campbellfreelance.com",
-            "image": "",
-            "mem": "silver",
-            "category": "it"
-        },
-        {
-            "name": "SRT Autoworks",
-            "address": "8380 W Rose Garden Ln St. 18",
-            "phone": "(623)961-7356",
-            "web": "www.srtautoworks.com",
-            "image": "",
-            "mem": "gold",
-            "category": "automotive"
-        },
-        {
-            "name": "Orkin Pest Control",
-            "address": "8957 W Windsor Dr St. 119",
-            "phone": "(623)224-3257",
-            "web": "www.orkin.com",
-            "image": "",
-            "mem": "bronze",
-            "category": "exterminating"
-        },
-        {
-            "name": "Bass Pro Shops",
-            "address": "1339 W Olive Ave",
-            "phone": "(000)000-0000",
-            "web": "www.basspro.com",
-            "image": "",
-            "mem": "np",
-            "category": "retail"
-        },
-        {
-            "name": "Ray's Tacos",
-            "address": "918 E Bell Rd",
-            "phone": "(928)771-2090",
-            "web": "n/a",
-            "image": "",
-            "mem": "gold",
-            "category": "food"
-        },
-        {
-            "name": "Discount Tire AZ",
-            "address": "16332 E Happy Valley Dr",
-            "phone": "(623)615-0016",
-            "web": "www.discounttire.com",
-            "image": "",
-            "mem": "Gold",
-            "category": "automotive"
+            "members": [
+                {
+                    "name": "Straight 6 Performance",
+                    "address": "19004 N 51st Dr",
+                    "phone": "(623)331-6125",
+                    "web": "www.s6p.com",
+                    "image": "",
+                    "mem": "Gold",
+                    "category": "automotive"
+                },
+                {
+                    "name": "Campbell Freelance",
+                    "address": "16601 N 75th Ave",
+                    "phone": "(602)851-1613",
+                    "web": "www.campbellfreelance.com",
+                    "image": "",
+                    "mem": "Silver",
+                    "category": "it"
+                },
+                {
+                    "name": "SRT Autoworks",
+                    "address": "8380 W Rose Garden Ln St. 18",
+                    "phone": "(623)961-7356",
+                    "web": "www.srtautoworks.com",
+                    "image": "",
+                    "mem": "Gold",
+                    "category": "automotive"
+                },
+                {
+                    "name": "Orkin Pest Control",
+                    "address": "8957 W Windsor Dr St. 119",
+                    "phone": "(623)224-3257",
+                    "web": "www.orkin.com",
+                    "image": "",
+                    "mem": "Bronze",
+                    "category": "exterminating"
+                },
+                {
+                    "name": "Bass Pro Shops",
+                    "address": "1339 W Olive Ave",
+                    "phone": "(000)000-0000",
+                    "web": "www.basspro.com",
+                    "image": "",
+                    "mem": "Non-Profit",
+                    "category": "retail"
+                },
+                {
+                    "name": "Ray's Tacos",
+                    "address": "918 E Bell Rd",
+                    "phone": "(928)771-2090",
+                    "web": "n/a",
+                    "image": "",
+                    "mem": "Gold",
+                    "category": "food"
+                },
+                {
+                    "name": "Discount Tire AZ",
+                    "address": "16332 E Happy Valley Dr",
+                    "phone": "(623)615-0016",
+                    "web": "www.discounttire.com",
+                    "image": "",
+                    "mem": "Gold",
+                    "category": "automotive"
+                }
+            ]
         }
     ]
 }

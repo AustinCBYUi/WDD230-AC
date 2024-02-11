@@ -26,14 +26,30 @@ const displayData = (infos) => {
 
         let h3 = document.createElement("h3");
         let p = document.createElement("p");
+        let address = document.createElement("p");
+        let aweb = document.createElement("a");
+        let logo = document.createElement("img");
+        let mem = document.createElement("p");
 
-        h3.innerHTML = info.members.name;
-        p.textContent = info.members.phone;
+        let website = infos[counter].web;
+
+        h3.innerHTML = infos[counter].name;
+        p.textContent = "Phone: " + infos[counter].phone;
+        address.textContent = "Address: " + infos[counter].address;
+        aweb.textContent = `Website: ${website}`;
+        //logo here
+        mem.textContent = "Membership: " + infos[counter].mem;
+
+        aweb.setAttribute("href", website);
 
         div.className = "box";
 
         div.appendChild(h3);
+        div.appendChild(logo);
         div.appendChild(p);
+        div.appendChild(address);
+        div.appendChild(aweb);
+        div.appendChild(mem);
 
         populate.appendChild(div);
 

@@ -419,5 +419,24 @@ input[type=submit]:hover {
 
 #populate {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 500px 500px 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+.box a:hover {
+    color: gray;
+}
+
+.box img {
+    width: 250px;
 }
