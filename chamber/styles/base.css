@@ -417,26 +417,91 @@ input[type=submit]:hover {
 }
 
 
+
+
+.select {
+    background-color:#2f588f;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.select button {
+    border: none;
+    background-color: #36454f;
+    color: white;
+    width: 125px;
+    height: 30px;
+    border: 1px solid #36454f;
+    border-radius: 18px;
+    display: inline;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.select .active {
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(26, 26, 26);
+}
+
+.select button:hover {
+    background-color: #2f588f;
+}
+
 #populate {
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 1fr;
     margin: 0 auto;
     justify-content: space-around;
+    grid-gap: 5px;
+	align-items: center;
     padding: 10px;
 }
 
-.box {
+
+.grid {
     text-align: center;
+    background-color: #222b31;
+    color: white;
 }
 
-.box a {
+.grid a {
     color: white;
     text-decoration: none;
 }
-.box a:hover {
+.grid a:hover {
     color: gray;
 }
 
-.box img {
-    width: 250px;
+.grid img {
+    width: 220px;
+    height: 200px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.50rem;
+    background-color: #222b31;
+    color: white;
+    width: 100%;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.list a:hover {
+    color: gray;
+}
+
+.list img {
+    display: none;
 }

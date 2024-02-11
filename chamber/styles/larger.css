@@ -266,4 +266,11 @@
     .main-portion {
         height: 150px;
     }
+
+
+    #populate {
+        grid-template-columns: 500px 500px 500px;
+    }
+
+    
 }
