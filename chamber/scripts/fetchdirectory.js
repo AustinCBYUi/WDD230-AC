@@ -43,6 +43,7 @@ const displayData = (infos) => {
 
         aweb.setAttribute("href", website);
         logo.setAttribute("src", logoURL);
+        logo.setAttribute("alt", `${infos[counter].name} logo`);
 
         div.className = "box";
 
