@@ -32,6 +32,7 @@ const displayData = (infos) => {
         let mem = document.createElement("p");
 
         let website = infos[counter].web;
+        let logoURL = infos[counter].image;
 
         h3.innerHTML = infos[counter].name;
         p.textContent = "Phone: " + infos[counter].phone;
@@ -41,6 +42,7 @@ const displayData = (infos) => {
         mem.textContent = "Membership: " + infos[counter].mem;
 
         aweb.setAttribute("href", website);
+        logo.setAttribute("src", logoURL);
 
         div.className = "box";
 

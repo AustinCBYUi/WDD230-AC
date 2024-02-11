@@ -7,7 +7,7 @@
                     "address": "19004 N 51st Dr",
                     "phone": "(623)331-6125",
                     "web": "www.s6p.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/unavailable.png",
                     "mem": "Gold",
                     "category": "automotive"
                 },
@@ -16,7 +16,7 @@
                     "address": "16601 N 75th Ave",
                     "phone": "(602)851-1613",
                     "web": "www.campbellfreelance.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/unavailable.png",
                     "mem": "Silver",
                     "category": "it"
                 },
@@ -25,7 +25,7 @@
                     "address": "8380 W Rose Garden Ln St. 18",
                     "phone": "(623)961-7356",
                     "web": "www.srtautoworks.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/logo.webp",
                     "mem": "Gold",
                     "category": "automotive"
                 },
@@ -34,7 +34,7 @@
                     "address": "8957 W Windsor Dr St. 119",
                     "phone": "(623)224-3257",
                     "web": "www.orkin.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/orkin.jpg",
                     "mem": "Bronze",
                     "category": "exterminating"
                 },
@@ -43,7 +43,7 @@
                     "address": "1339 W Olive Ave",
                     "phone": "(000)000-0000",
                     "web": "www.basspro.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/Bass-Pro-Shops-Logo-1984.jpg",
                     "mem": "Non-Profit",
                     "category": "retail"
                 },
@@ -52,7 +52,7 @@
                     "address": "918 E Bell Rd",
                     "phone": "(928)771-2090",
                     "web": "n/a",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/unavailable.png",
                     "mem": "Gold",
                     "category": "food"
                 },
@@ -61,7 +61,7 @@
                     "address": "16332 E Happy Valley Dr",
                     "phone": "(623)615-0016",
                     "web": "www.discounttire.com",
-                    "image": "",
+                    "image": "https://github.com/AustinCBYUi/wdd230/blob/main/chamber/images/dt.png",
                     "mem": "Gold",
                     "category": "automotive"
                 }
