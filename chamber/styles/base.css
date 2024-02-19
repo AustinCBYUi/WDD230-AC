@@ -89,6 +89,7 @@ ul.navigation li:hover {
     background-color: #456ea2;
 }
 
+
 /* --------------- END OF NAVIGATION -------------- */
 
 
@@ -235,15 +236,16 @@ ul.navigation li:hover {
 }
 
 .weather-card {
-    color: black;
-    background-color: var(--wh);
+    color: white;
+    background-color: #606060;
     border: solid .25px black;
     margin: 5px;
     height: 300px;
+    text-align: center;
 }
 
 .weather-card h3 {
-    color: black;
+    color: white;
 }
 /* --------------- END OF WEATHER SECTION -------------- */
 
