@@ -1,6 +1,7 @@
 # WDD230-AC
  
 #TODO
-- Need to figure out why parallax effect is not working
-- Fix styling issues in mobile view with hero text on top of parallax.
-- Header + Footer and next weeks content :o
+- Scrapped Parallax
+- Work on picking random members for spotlight scroller on index.html
+- Work on the closeable popup / banner that should appear only Monday-Wednesday.
+- Triple check mobile views, disable certain features on mobile too.
