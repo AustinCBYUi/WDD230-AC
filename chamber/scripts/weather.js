@@ -4,22 +4,17 @@ const weatherIcon = document.querySelector("#weathericon");
 const currentTemp2 = document.querySelector("#tempTomorrow");
 const weatherIcon2 = document.querySelector("#iconTomorrow");
 
+const currentTemp3 = document.querySelector("#tempDayAfter");
+const weatherIcon3 = document.querySelector("#iconDayAfter");
+
+//These selectors are for the day itself, so if today is Monday,
+// it will start from left to right being Monday, Tuesday Wednesday.
 const todayDiv = document.querySelector("#today");
 const tmrwDiv = document.querySelector("#tomorrow");
 const dayAfter = document.querySelector("#dayAfterTomorrow");
 
-let date = new Date;
-var year = date.toLocaleString("default", { year: "numeric"});
-var month = date.toLocaleString("default", { month: "2-digit" });
-var day = date.toLocaleString("default", { day: "2-digit" });
-var tmrwInt = date.getDate() + 1;
-var formattedDate = `${year}-${month}-${tmrwInt}`;
-var idk = date.getTime();
-var idktomorrow = idk + 86400000;
-console.log(idk, idktomorrow);
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=33.58&lon=-112.23&units=imperial&appid=838f172a8bd0ab2aa58b4380db742287";
-// https://api.openweathermap.org/data/3.0/onecall/day_summary?lat={lat}&lon={lon}&date={date}&appid={API key}
-const urlTmrw = `https://api.openweathermap.org/data/2.5/weather?lat=33.58&lon=-112.23&units=imperial&dt=${idktomorrow}&appid=838f172a8bd0ab2aa58b4380db742287`;
+
+const urlTmrw = `https://api.openweathermap.org/data/2.5/forecast?lat=33.58&lon=-112.23&units=imperial&appid=838f172a8bd0ab2aa58b4380db742287`;
 
 
 async function getDay() {
@@ -76,7 +71,16 @@ function dayToString(day) {
 
 
 //async function to try fetching and taking response
-async function fetchAPI(url, tempDiv, iconDiv) {
+/**
+ * Fetches a response from the URL parameter which is sent to display the results
+ * in a function. Only URL and index are technically modifiable. tempDiv and iconDiv
+ * are meant to populate the divs in the HTML by directly targetting them.
+ * @param {*} url - API URL
+ * @param {*} tempDiv - Div from the HTML Document as a target for the temperature
+ * @param {*} iconDiv - Div from the HTML document as a target for the icon
+ * @param {*} index - Index number of which response to access.
+ */
+async function fetchAPI(url, tempDiv, iconDiv, index) {
     try {
         //try to fetch, whatever is fetched is stored
         //in the response variable.
@@ -86,8 +90,8 @@ async function fetchAPI(url, tempDiv, iconDiv) {
             //store the response in a variable named data
             const data = await response.json();
             //and plug that response into our other function
-            displayResults(data, currentTemp, weatherIcon);
-            console.table(data);
+            // console.log(data);
+            displayResults(data, tempDiv, iconDiv, index);
         } else {
             //all else, throw an error with the awaitted
             //response text as the error..
@@ -99,20 +103,20 @@ async function fetchAPI(url, tempDiv, iconDiv) {
     }
 }
 
-
+//Index 3, 11, 19 for three day forecast at 12:00PM
 
 //displays results to the document query selectors
-function displayResults(data, tempDiv, iconDiv) {
+function displayResults(data, tempDiv, iconDiv, index) {
     //Rounding the temperature as 55.65 degrees
     //is relatively useless to display.
-    var temp = Math.round(data.main.temp, 0);
+    var temp = Math.round(data.list[index].main.temp, 0);
     //set the current temperature that is fetched to
     //the query selector in the HTML.
     tempDiv.innerHTML = `${temp}&deg;F`;
     //icon using api's url
-    const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const icon = `https://openweathermap.org/img/w/${data.list[index].weather[0].icon}.png`;
     //description index according to fetch function.
-    let description = data.weather[0].description;
+    let description = data.list[index].weather[0].description;
     //setting the constants of query selectors to the
     //data we have above.
     iconDiv.setAttribute("src", icon);
@@ -120,6 +124,10 @@ function displayResults(data, tempDiv, iconDiv) {
 }
 
 //Call the fetch.
-fetchAPI(url, currentTemp, weatherIcon);
-fetchAPI(urlTmrw, currentTemp2, weatherIcon2);
+//Today
+fetchAPI(urlTmrw, currentTemp, weatherIcon, 3);
+//Tomorrow,
+fetchAPI(urlTmrw, currentTemp2, weatherIcon2, 11);
+// fetchAPI(urlTmrw, c)
+fetchAPI(urlTmrw, currentTemp3, weatherIcon3, 19);
 getDay();

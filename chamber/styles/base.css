@@ -246,6 +246,22 @@ ul.navigation li:hover {
 
 .weather-card h3 {
     color: white;
+    font-size: 28px;
+}
+
+.weather-card img {
+    width: 80px;
+}
+
+.weather-card p {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.small {
+    color: white;
+    text-align: center;
+    grid-column: 2/3;
 }
 /* --------------- END OF WEATHER SECTION -------------- */
 
