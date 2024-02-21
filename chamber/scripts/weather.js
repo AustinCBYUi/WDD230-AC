@@ -1,11 +1,14 @@
 const currentTemp = document.querySelector("#currenttemp");
 const weatherIcon = document.querySelector("#weathericon");
+const description1 = document.querySelector("#currentDesc");
 
 const currentTemp2 = document.querySelector("#tempTomorrow");
 const weatherIcon2 = document.querySelector("#iconTomorrow");
+const description2 = document.querySelector("#descTomorrow");
 
 const currentTemp3 = document.querySelector("#tempDayAfter");
 const weatherIcon3 = document.querySelector("#iconDayAfter");
+const description3 = document.querySelector("#descDayAfter");
 
 //These selectors are for the day itself, so if today is Monday,
 // it will start from left to right being Monday, Tuesday Wednesday.
@@ -80,7 +83,7 @@ function dayToString(day) {
  * @param {*} iconDiv - Div from the HTML document as a target for the icon
  * @param {*} index - Index number of which response to access.
  */
-async function fetchAPI(url, tempDiv, iconDiv, index) {
+async function fetchAPI(url, tempDiv, iconDiv, descDiv, index) {
     try {
         //try to fetch, whatever is fetched is stored
         //in the response variable.
@@ -91,7 +94,7 @@ async function fetchAPI(url, tempDiv, iconDiv, index) {
             const data = await response.json();
             //and plug that response into our other function
             // console.log(data);
-            displayResults(data, tempDiv, iconDiv, index);
+            displayResults(data, tempDiv, iconDiv, descDiv, index);
         } else {
             //all else, throw an error with the awaitted
             //response text as the error..
@@ -106,7 +109,7 @@ async function fetchAPI(url, tempDiv, iconDiv, index) {
 //Index 3, 11, 19 for three day forecast at 12:00PM
 
 //displays results to the document query selectors
-function displayResults(data, tempDiv, iconDiv, index) {
+function displayResults(data, tempDiv, iconDiv, descDiv, index) {
     //Rounding the temperature as 55.65 degrees
     //is relatively useless to display.
     var temp = Math.round(data.list[index].main.temp, 0);
@@ -117,6 +120,8 @@ function displayResults(data, tempDiv, iconDiv, index) {
     const icon = `https://openweathermap.org/img/w/${data.list[index].weather[0].icon}.png`;
     //description index according to fetch function.
     let description = data.list[index].weather[0].description;
+    //Add description of the sky to span
+    descDiv.innerHTML = description;
     //setting the constants of query selectors to the
     //data we have above.
     iconDiv.setAttribute("src", icon);
@@ -125,9 +130,9 @@ function displayResults(data, tempDiv, iconDiv, index) {
 
 //Call the fetch.
 //Today
-fetchAPI(urlTmrw, currentTemp, weatherIcon, 3);
+fetchAPI(urlTmrw, currentTemp, weatherIcon, description1, 3);
 //Tomorrow,
-fetchAPI(urlTmrw, currentTemp2, weatherIcon2, 11);
+fetchAPI(urlTmrw, currentTemp2, weatherIcon2, description2, 11);
 // fetchAPI(urlTmrw, c)
-fetchAPI(urlTmrw, currentTemp3, weatherIcon3, 19);
+fetchAPI(urlTmrw, currentTemp3, weatherIcon3, description3, 19);
 getDay();

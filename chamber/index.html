@@ -48,6 +48,10 @@
 
     <!-- Main Section -->
     <main>
+        <div id="banner">
+            <p>Welcome to Glendale Chambers of Commerce! Please join us for the Meet and Greet at 7:00PM on Wednesday!</p>
+            <button type="button" id="closePop">X</button>
+        </div>
 
         <!-- Hero / Parallax Box 1 -->
         <div class="parallax">
@@ -86,27 +90,9 @@
 
         <!-- SpotLight Advertisements -->
         <div class="spotlight">
-            <div class="box">
-                <img src="images/placeholder.jpg" alt="placeholder">
-                <h3>Spotlight</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus commodi exercitationem quas temporibus soluta. Repellat aliquam animi omnis odio illum quae quasi temporibus libero dicta ea, officiis et. Error, id?
-                </p>
-            </div>
-            <div class="box">
-                <img src="images/placeholder.jpg" alt="placeholder">
-                <h3>Spotlight</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis praesentium veniam nisi maxime doloribus repellat rem alias exercitationem quam, perspiciatis nihil culpa temporibus blanditiis ea aspernatur consectetur expedita harum quod!
-                </p>
-            </div>
-            <div class="box">
-                <img src="images/placeholder.jpg" alt="placeholder">
-                <h3>Spotlight</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quas sint nam repellat, necessitatibus, corporis aliquam corrupti, accusamus ipsum id eligendi fugit et dignissimos a praesentium ea commodi nisi minus!
-                </p>
-            </div>
+            <span class="spottext">
+                <h1>Spotlight</h1>
+            </span>
         </div>
 
 
@@ -117,6 +103,7 @@
                 <div class="weather-card">
                     <h3 id="today">mon</h3>
                     <img id="weathericon" src="" alt=""></img>
+                    <p><span id="currentDesc"></span></p>
                     <p><span id="currenttemp"></span></p>
                     <!-- Icon? -->
 
@@ -124,6 +111,7 @@
                 <div class="weather-card">
                     <h3 id="tomorrow">tue</h3>
                     <img id="iconTomorrow" src="" alt="">
+                    <p><span id="descTomorrow"></span></p>
                     <p><span id="tempTomorrow"></span></p>
                     <!-- Icon? -->
                     
@@ -131,6 +119,7 @@
                 <div class="weather-card">
                     <h3 id="dayAfterTomorrow">wed</h3>
                     <img id="iconDayAfter" src="" alt="">
+                    <p><span id="descDayAfter"></span></p>
                     <p><span id="tempDayAfter"></span></p>
                     <!-- Icon? -->
                 </div>
@@ -153,5 +142,7 @@
     <script src="scripts/hamburger-navigation.js"></script>
     <script src="scripts/lastModified.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/randomSpotLight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

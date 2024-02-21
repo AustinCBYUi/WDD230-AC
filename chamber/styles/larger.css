@@ -112,6 +112,19 @@
     #become-member {
         border: none;
     }
+
+    .weather-card h3 {
+        font-size: 28px;
+    }
+
+    .weather-card img {
+        width: 80px;
+    }
+
+    .weather-card p {
+        font-weight: 800;
+        font-size: 24px;
+    }
     /* --------------- END OF PARALLAX 2/HERO 2 -------------- */
 
 
