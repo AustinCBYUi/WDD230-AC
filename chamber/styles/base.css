@@ -219,9 +219,22 @@ ul.navigation li:hover {
     border: none;
     cursor: pointer;
 }
+
 #become-member:hover {
     background-color: #4f4f4f;
     color: var(--wh);
+}
+
+.buttonBox {
+    background-color: #000000;
+    text-decoration: none;
+    color: white;
+}
+
+.spottext {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 5px;
 }
 /* --------------- END OF PARALLAX NUM 2 -------------- */
 
